@@ -9,12 +9,15 @@
 
 
 Для запуска сервера:
+
 uvicorn app:app --reload
 
 Установка модулей и зависимостей:
+
 pip install -r requirements.txt
 
-Ссылка на данные 
+Ссылка на данные:
+
 'https://raw.githubusercontent.com/Murcha1990/MLDS_ML_2022/main/Hometasks/HT1/cars_test.csv'
 
 Пример данных:
@@ -37,7 +40,9 @@ pip install -r requirements.txt
 ```
 
  Он же но в формате скрипта :
- ``` curl -X 'POST' \
+ 
+```
+curl -X 'POST' \
   'http://127.0.0.1:8000/predict_item' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
